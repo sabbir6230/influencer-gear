@@ -1,0 +1,113 @@
+/* Google Fonts Here */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* google fonts  */
+/* font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* Shared Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.section-margin {
+    margin-top: 100px;
+}
+
+/* Header Section Styles */
+nav {
+    padding: 50px 0;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.nav-manu-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-manu-container li {
+    list-style: none;
+}
+
+.nav-manu-container li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* Responsive Design */
+/* small or mobile device */
+@media screen and (max-width: 576px){
+    .nav-container,
+    .nav-manu-container {
+        flex-direction: column;
+    }
+
+    .nav-manu-container {
+        gap: 10px;
+        margin-top: 15px;
+        
+    }
+    .nav-manu-container li {
+        background-color: rgb(209, 211, 211);
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+    .nav-manu-container li a {
+        color: blue;
+    }
+
+}
+
+/* tablat or mideum device */
+
+@media screen and (max-width: 960px) {
+    .nav-container,
+    .nav-manu-container {
+        flex-direction: column;
+    }
+
+    .nav-manu-container {
+        gap: 10px;
+        margin-top: 15px;
+        
+    }
+    .nav-manu-container li {
+        width: 190px;
+        text-align: center;
+        background-color: rgb(209, 211, 211);
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+    .nav-manu-container li a {
+        color: blue;
+    }
+
+
+}
