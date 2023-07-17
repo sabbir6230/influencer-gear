@@ -116,8 +116,20 @@ nav {
     width: 450px;
     margin: 0 auto;
 }
-
-
+/* Logo Seciton Styles */
+.logo-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.logo-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 50px;
+    box-shadow: inset 0px 3px 6px -6px #888, inset 0px -3px 6px -6px #888
+    
+}
 
 
 
@@ -161,13 +173,27 @@ nav {
     .banner-container {
         flex-direction: column-reverse;
     }
-
     .nav-manu-container {
         gap: 10px;
         margin-top: 15px;
 
     }
-
+    .logo-section-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        gap: 30px;
+        align-content: center;
+    }
+    .logo-section-container {
+        padding: 30px 10px;
+    }
+    .logo-section-container img {
+        width: 100%;
+    }
+    .logo-section {
+        margin: 30px auto;
+    }
     .nav-manu-container li {
         background-color: rgb(209, 211, 211);
         padding: 10px 10px;
@@ -233,6 +259,22 @@ nav {
         width: 100%;
         text-align: center;
         margin-top: 20px;
+    }
+    .logo-section-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        gap: 50px;
+        align-content: center;
+    }
+    .logo-section-container {
+        padding: 30px 10px;
+    }
+    .logo-section-container img {
+        width: 100%;
+    }
+    .logo-section {
+        margin: 30px auto;
     }
 
 }
